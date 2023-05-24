@@ -19,7 +19,8 @@ const Menu = () => {
         title="Our Menu"
         subTitle="Would you like to try a dish?"
       ></Cover>
-      <section className="mb-12 mx-10 md:mx-40">
+      
+     {/*  <section className="mb-12 mx-10 md:mx-40">
         <PopularMenu></PopularMenu>
       </section>
       <Cover
@@ -53,7 +54,7 @@ const Menu = () => {
       ></Cover>
       <section className="mb-12 mx-10 md:mx-40">
         <PopularMenu></PopularMenu>
-      </section>
+      </section> */}
     </div>
   );
 };
