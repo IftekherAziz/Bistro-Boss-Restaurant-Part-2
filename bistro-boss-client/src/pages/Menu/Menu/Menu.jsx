@@ -46,7 +46,7 @@ const Menu = () => {
         subTitle="Desserts are delectable treats that satisfy your sweet tooth. From cakes to cookies, ice cream to pies, they offer a delightful indulgence and a perfect ending to any meal."
       ></Cover>
       <div className="mb-12 mx-10 md:mx-40">
-        <MenuCategory items={desserts} title={"desserts"}></MenuCategory>
+        <MenuCategory items={desserts} title={"dessert"}></MenuCategory>
       </div>
       {/* Pizza Section */}
       <Cover
@@ -55,7 +55,7 @@ const Menu = () => {
         subTitle="Pizza, a beloved culinary creation, combines a crispy crust with savory tomato sauce and a variety of toppings. Its irresistible flavors, gooey cheese, and satisfying chew make it a timeless favorite worldwide."
       ></Cover>
       <div className="mb-12 mx-10 md:mx-40">
-        <MenuCategory items={pizzas} title={"pizzas"}></MenuCategory>
+        <MenuCategory items={pizzas} title={"pizza"}></MenuCategory>
       </div>
       {/* Salad Section */}
       <Cover

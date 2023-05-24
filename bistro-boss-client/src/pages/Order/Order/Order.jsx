@@ -36,7 +36,7 @@ const Order = () => {
       ></Cover>
       {/* Shop by Category Section */}
       <div className="my-14 text-center">
-        <Tabs defaultIndex={0} onSelect={(index) => setTabIndex(index)}>
+        <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <TabList>
             <Tab>Salad</Tab>
             <Tab>Pizza</Tab>
