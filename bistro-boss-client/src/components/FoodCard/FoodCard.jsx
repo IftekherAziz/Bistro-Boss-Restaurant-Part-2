@@ -1,23 +1,24 @@
-
-
-const FoodCard = ({item}) => {
-    const {name, price, image, recipe} = item;
-    return (
-      <div>
-        <div className="card w-96 bg-base-100 shadow-md mb-10">
-          <figure className="">
-            <img src="" alt="Salads" className="w-full max-h-[280px]" />
-          </figure>
-          <div className="card-body items-center text-center bg-zinc-50">
-            <h2 className="card-title">Caeser Salad</h2>
-            <p>Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets.</p>
-            <button className="btn  text-yellow-600  btn-outline border-0 border-b-2 mt-4">
-              Add To Cart
-            </button>
-          </div>
+const FoodCard = ({ item }) => {
+  const { name, price, image, recipe } = item;
+  return (
+    <div className="card w-96 bg-zinc-50 shadow-xl">
+      <figure>
+        <img src={image} alt="Shoes" />
+      </figure>
+      <p className="absolute right-0 mr-4 mt-4 px-4 bg-slate-900 text-white">
+        ${price}
+      </p>
+      <div className="card-body flex flex-col items-center">
+        <h2 className="card-title">{name}</h2>
+        <p>{recipe}</p>
+        <div className="card-actions justify-end">
+          <button className="btn btn-outline text-yellow-600  border-0 border-b-4 border-yellow-600 mt-4">
+            Add to Cart
+          </button>
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default FoodCard;

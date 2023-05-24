@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Helmet } from "react-helmet-async";
 import Cover from "../../Shared/Cover/Cover";
 import orderFood from "../../../assets/shop/banner2.jpg";
@@ -34,8 +35,8 @@ const Order = () => {
         subTitle="Would you like to try a dish? Order your favourite dish from our shop.Enjoy you meal with Bistro Boss"
       ></Cover>
       {/* Shop by Category Section */}
-      <div className="my-14 mx-10 md:mx-40 text-center">
-        <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+      <div className="my-14 text-center">
+        <Tabs defaultIndex={0} onSelect={(index) => setTabIndex(index)}>
           <TabList>
             <Tab>Salad</Tab>
             <Tab>Pizza</Tab>
