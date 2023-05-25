@@ -10,7 +10,7 @@ import OrderCard from "../OrderCard/OrderCard";
 import useMenu from "../../../hooks/useMenu";
 
 const Order = () => {
-  const categories = ["salad", "pizza", "soup", "dessert", "drinks"];
+  const categories = ["salad", "pizza", "soup", "dessert", "drinks", "offered"];
   const { category } = useParams();
   const initialIndex = categories.indexOf(category);
   const [tabIndex, setTabIndex] = useState(initialIndex);
@@ -22,6 +22,7 @@ const Order = () => {
   const salads = menu.filter((item) => item.category === "salad");
   const pizzas = menu.filter((item) => item.category === "pizza");
   const drinks = menu.filter((item) => item.category === "drinks");
+  const offered = menu.filter((item) => item.category === "offered");
 
   return (
     <div>
@@ -43,22 +44,28 @@ const Order = () => {
             <Tab>Soup</Tab>
             <Tab>Dessert</Tab>
             <Tab>Drinks</Tab>
+            <Tab>On Sale</Tab>
           </TabList>
-          <TabPanel>
-            <OrderCard items={salads}></OrderCard>
-          </TabPanel>
-          <TabPanel>
-            <OrderCard items={pizzas}></OrderCard>
-          </TabPanel>
-          <TabPanel>
-            <OrderCard items={soups}></OrderCard>
-          </TabPanel>
-          <TabPanel>
-            <OrderCard items={desserts}></OrderCard>
-          </TabPanel>
-          <TabPanel>
-            <OrderCard items={drinks}></OrderCard>
-          </TabPanel>
+          <div className="px-10">
+            <TabPanel>
+              <OrderCard items={salads}></OrderCard>
+            </TabPanel>
+            <TabPanel>
+              <OrderCard items={pizzas}></OrderCard>
+            </TabPanel>
+            <TabPanel>
+              <OrderCard items={soups}></OrderCard>
+            </TabPanel>
+            <TabPanel>
+              <OrderCard items={desserts}></OrderCard>
+            </TabPanel>
+            <TabPanel>
+              <OrderCard items={drinks}></OrderCard>
+            </TabPanel>
+            <TabPanel>
+              <OrderCard items={offered}></OrderCard>
+            </TabPanel>
+          </div>
         </Tabs>
       </div>
     </div>

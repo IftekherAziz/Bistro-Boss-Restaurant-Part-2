@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { Link } from "react-router-dom";
 
 import slide1 from "../../../assets/home/slide1.jpg";
 import slide2 from "../../../assets/home/slide2.jpg";
@@ -25,41 +25,49 @@ const Category = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper mb-24 mt-20"
+        className="mySwiper mb-12 mt-12"
       >
         <SwiperSlide>
           <img src={slide1} alt="Salads" />
-          <h3 className="text-md md:text-2xl uppercase text-center -mt-12  text-white">
-            Salads
-          </h3>
+          <Link to="/order/salad">
+            <h3 className="text-md md:text-2xl uppercase text-center -mt-12 mb-20  text-white">
+              Salads
+            </h3>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide2} alt="Pizzas" />
-          <h3 className="text-md md:text-2xl uppercase text-center -mt-12   text-white">
-            Pizzas
-          </h3>
+          <Link to="/order/pizza">
+            <h3 className="text-md md:text-2xl uppercase text-center -mt-12  mb-20  text-white">
+              Pizzas
+            </h3>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide3} alt="Soups" />
-          <h3 className="text-md md:text-2xl uppercase text-center -mt-12  text-white">
-            Soups
-          </h3>
+          <Link to="/order/soup">
+            <h3 className="text-md md:text-2xl uppercase text-center -mt-12  mb-20 text-white">
+              Soups
+            </h3>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide4} alt="Desserts" />
-          <h3 className="text-md md:text-2xl uppercase text-center -mt-12  text-white">
-            Desserts
-          </h3>
+          <Link to="/order/dessert">
+            <h3 className="text-md md:text-2xl uppercase text-center -mt-12  mb-20 text-white">
+              Desserts
+            </h3>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide5} alt="Salads" />
-          <h3 className="text-md md:text-2xl uppercase text-center -mt-12  text-white">
+          <h3 className="text-md md:text-2xl uppercase text-center -mt-12  mb-20 text-white">
             Salads
           </h3>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide4} alt="Desserts" />
-          <h3 className="text-md md:text-2xl uppercase text-center -mt-12  text-white">
+          <h3 className="text-md md:text-2xl uppercase text-center -mt-12  mb-20 text-white">
             Desserts
           </h3>
         </SwiperSlide>
